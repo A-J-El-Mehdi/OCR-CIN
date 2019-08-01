@@ -17,7 +17,7 @@ class Botona extends StatefulWidget{
 
   class _BotonaState extends State<Botona>{
   String _option;
-  VisionText _visionText;
+
   List<TextLine> _list =[] ;
   @override
   void initState() {
@@ -67,7 +67,7 @@ class Botona extends StatefulWidget{
         }
       }
       setState(()  {
-        _visionText= visionText;
+
         Navigator.of(context).push(new MaterialPageRoute(builder: (context){return new Main2(_list);}));
       });
     }
@@ -91,7 +91,7 @@ class Botona extends StatefulWidget{
       }
 print(visionText.text);
       setState(() {
-        _visionText=  visionText;
+
         Navigator.of(context).push(new MaterialPageRoute(builder: (context){return new Main2(_list);}));
       }
       );

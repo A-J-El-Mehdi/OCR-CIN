@@ -20,7 +20,7 @@ class Botona2 extends StatefulWidget{
 
 class _Botona2State extends State<Botona2>{
   String _option;
-  VisionText _visionText;
+
   List<TextLine> _list1 =[] ;
   List<TextLine> _list2 =[] ;
   String _nom;
@@ -151,8 +151,6 @@ class _Botona2State extends State<Botona2>{
         }
       }
       setState(()  {
-        _visionText= visionText;
-        //_sendData(_list1, _list2);
         Navigator.of(context).push(new MaterialPageRoute(builder: (context){return new Infos(_list1,_list2);}));
       });
 
@@ -176,7 +174,6 @@ class _Botona2State extends State<Botona2>{
         }
       }
       setState(() {
-        _visionText=  visionText;
         Navigator.of(context).push(new MaterialPageRoute(builder: (context){return new Infos(_list1,_list2);}));
       }
       );
